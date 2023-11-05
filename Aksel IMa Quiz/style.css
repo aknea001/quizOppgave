@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+body    {
+   background-color: #F29A2E;
+}
+
+#overskrift {
+   width: 700px;
+   border: 2px solid #023E73;
+   border-radius: 100px 10px 100px 10px;
+   text-align: center;
+   align-items: center;
+   margin: auto;
+   background-color: #F28B30;
+   margin-top: 1rem;
+   font-family: 'PT Sans', sans-serif;
+   font-size: 1rem;
+}
+
+.spørsmål   {
+   width: max-content;
+   align-items: center;
+   text-align: center;
+   margin: auto;
+   font-family: 'PT Sans', sans-serif;
+   font-size: 1.5rem;
+   margin-top: 20px;
+}
+
+.spørsmålnr {
+   width: 400px;
+   align-items: center;
+   text-align: center;
+   margin: auto;
+   font-family: 'PT Sans', sans-serif;
+   font-size: 1rem;
+}
+
+.vertikalrekke    {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: column;
+   margin-bottom: 1rem;
+}
+
+.horisontalrekke  {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-direction: row;
+   margin-top: 1rem;
+}
+
+.knapp  {
+   width: 500px;
+   padding: 20px;
+   border: 1px solid #023E73;
+   text-align: center;
+   margin: auto;
+   text-decoration: none;
+   font-family: 'PT Sans', sans-serif;
+   font-size: 1.5rem;
+   margin-top: 1rem;
+   background-color: #F28B30;
+   color: black;
+   border-radius: 1rem;
+}
+
+.knapp:hover    {
+   transition: 300ms;
+   width: 550px;
+   font-weight: 900;
+   border: 1px solid #023E73;
+}
+
+.bildeknapp {
+   width: 500px;
+   border: 3px solid #023E73;
+   border-radius: 1rem;
+   box-sizing: border-box;
+}
+
+.bildeknapp:hover {
+   transition: 200ms;
+   border: 5px solid #023E73;
+   border-radius: 1rem 0;
+}
+
+.bilde  {
+   position: relative;
+   display: block;
+   width: 500px;
+   margin: auto;
+   border-radius: 1rem;
+   border: 3px solid #023E73;
+   margin-top: 1rem;
+}
+
+.bilde:hover    {
+   transition: 300ms;
+   opacity: 0.3;
+}
+
+.bildetekst {
+   position: absolute;
+   font-family: 'PT Sans', sans-serif;
+   font-size: 1.5rem;
+   bottom: 0px;
+   left: 3px;
+   padding: 5px;
+}
+
+.bildemedtekst  {
+   width: fit-content;
+   height: fit-content;
+   position: relative;
+   margin: auto;
+}
+
+.bildeutentekst:hover {
+   opacity: 1;
+}
