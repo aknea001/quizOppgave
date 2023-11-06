@@ -53,21 +53,6 @@ body    {
 }
 
 .knapp  {
-   width: 500px;
-   padding: 20px;
-   border: 1px solid #023E73;
-   text-align: center;
-   margin: auto;
-   text-decoration: none;
-   font-family: 'PT Sans', sans-serif;
-   font-size: 1.5rem;
-   margin-top: 1rem;
-   background-color: #F28B30;
-   color: black;
-   border-radius: 1rem;
-}
-
-.knapp1  {
    width: 550px;
    padding: 20px;
    border: 1px solid #023E73;
@@ -83,13 +68,6 @@ body    {
 }
 
 .knapp:hover    {
-   transition: 300ms;
-   width: 550px;
-   font-weight: 900;
-   border: 1px solid #023E73;
-}
-
-.knapp1:hover    {
    transition: 300ms;
    width: 600px;
    font-weight: 900;
