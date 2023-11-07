@@ -135,8 +135,7 @@ button   {
 
 .test {
    display: flex;
-   border: 1px solid red;
-   width: 50px;
+   width: 250px;
    height: 50px;
    justify-content: center;
    margin: auto;
