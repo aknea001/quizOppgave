@@ -132,3 +132,12 @@ button   {
 #question2, #question3, #question4, #question5, #question6, #question7, #question8, #question9, #question10  {
    display: none;
 }
+
+.test {
+   display: flex;
+   border: 1px solid red;
+   width: 50px;
+   height: 50px;
+   justify-content: center;
+   margin: auto;
+}

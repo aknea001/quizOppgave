@@ -80,7 +80,9 @@ opg10Knapp.addEventListener("click", function () {
     window.location = ("vinn.html")
 })
 
-feil.forEach(function (feilButton) {
+/*feil.forEach(function (feilButton) {
     feilButton.addEventListener("click", function () {
         window.location = ("feil.html")
-})})
+    })
+})*/
+
