@@ -20,8 +20,6 @@ const opg8 = document.getElementById("question8")
 const opg9 = document.getElementById("question9")
 const opg10 = document.getElementById("question10")
 
-const feil = document.querySelectorAll(".feilKnapp")
-
 opg1Knapp.addEventListener("click", function () {
     opg1.style.display = "none"
     opg2.style.display = "block"
@@ -79,10 +77,3 @@ opg9Knapp.addEventListener("click", function () {
 opg10Knapp.addEventListener("click", function () {
     window.location = ("vinn.html")
 })
-
-/*feil.forEach(function (feilButton) {
-    feilButton.addEventListener("click", function () {
-        window.location = ("feil.html")
-    })
-})*/
-
