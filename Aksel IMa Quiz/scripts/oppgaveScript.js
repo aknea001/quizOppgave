@@ -20,3 +20,9 @@ feil.forEach(function (feilButton) {
         }
     })
 })
+
+const hint = document.getElementById("hint")
+
+hint.addEventListener("click", function () {
+    console.log("l")
+})
