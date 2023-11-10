@@ -9,11 +9,6 @@ let opg = parseInt(localStorage.getItem("opg"))
 let max = opg * 2
 let min = max - 2
 
-document.getElementById("opgnrCheck").addEventListener("click", function() {
-    opg = localStorage.getItem("opg")
-    console.log(opg)
-})
-
 heartDisplays.forEach(function (heartDisplay) {
     heartDisplay.src = "bilder/hearts/" + hearts + "hearts.png"
 })
@@ -35,8 +30,12 @@ feil.forEach(function (feilButton) {
 })
 
 hint.addEventListener("click", function () {
-    //hint.style.display = "none"
+    hint.style.display = "none"
+
     opg = parseInt(localStorage.getItem("opg"))
+    max = opg * 2
+    min = max - 2
+
     num = Math.floor(Math.random() * (max - min)) + min
     console.log(num)
     feil.forEach(button => {
