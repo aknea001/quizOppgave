@@ -12,7 +12,7 @@ start.addEventListener("click", function () {
 taIgjen.addEventListener("click", function () {
     window.location = "oppgaver.html"
     localStorage.setItem("hearts", 5)
-    localStorage.setItem("opgnr", 1)
+    localStorage.setItem("opg", 1)
 })
 
 if (hearts == 5) {

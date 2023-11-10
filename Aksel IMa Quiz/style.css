@@ -141,13 +141,35 @@ button   {
    margin: auto;
 }
 
-.hintButton {
-   position: relative;
-   border: 1px solid red;
-   width: 35px;
+#hint {
+   width: 350px;
+   padding: 20px;
+   border: 1px solid #023E73;
+   text-align: center;
    margin: auto;
+   text-decoration: none;
+   font-family: 'PT Sans', sans-serif;
+   font-size: 1.5rem;
+   margin-top: 1rem;
+   background-color: #023E73;
+   color: white;
+   border-radius: 1rem;
 }
 
-.red {
+#hint:hover {
+   transition: 500ms;
+   font-weight: 900;
+   background-color: white;
+   color: #023E73;
+   cursor: pointer;
+}
+
+.hintDiv {
+   width: fit-content;
+   margin-right: auto;
+   position: absolute;
+}
+
+.wrong {
    background-color: red;
 }

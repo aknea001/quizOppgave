@@ -2,8 +2,17 @@ const feil = document.querySelectorAll(".feilKnapp")
 const heartDisplays = document.querySelectorAll(".hearts")
 const hint = document.getElementById("hint")
 let hearts = localStorage.getItem("hearts")
-let opg = localStorage.getItem("opgnr")
-let num = 0
+let num = Math.floor(Math.random() * (2 - 0)) + 0
+
+let opg = parseInt(localStorage.getItem("opg"))
+
+let max = opg * 2
+let min = max - 2
+
+document.getElementById("opgnrCheck").addEventListener("click", function() {
+    opg = localStorage.getItem("opg")
+    console.log(opg)
+})
 
 heartDisplays.forEach(function (heartDisplay) {
     heartDisplay.src = "bilder/hearts/" + hearts + "hearts.png"
@@ -26,10 +35,12 @@ feil.forEach(function (feilButton) {
 })
 
 hint.addEventListener("click", function () {
-    num = Math.floor(Math.random() * (4 - 2 + 1)) + 2
+    //hint.style.display = "none"
+    opg = parseInt(localStorage.getItem("opg"))
+    num = Math.floor(Math.random() * (max - min)) + min
+    console.log(num)
     feil.forEach(button => {
-        button.classList.remove("red")
+        button.classList.remove("wrong")
     })
-
-    feil[num].classList.add("red")
+    feil[num].classList.add("wrong")
 })
