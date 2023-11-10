@@ -107,7 +107,7 @@ opg9Knapp.addEventListener("click", function () {
 })
 
 opg10Knapp.addEventListener("click", function () {
-    window.location = ("vinn.html")
+    window.location = ("input.html")
 })
 
 /*let opg = 1
