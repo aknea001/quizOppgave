@@ -67,7 +67,7 @@ input.addEventListener("keypress", function(event) {
             window.location = "vinn.html"
         }
         else {
-            inputText.textContent = "Det var feil, siden det er et bonus spørsmål får du uendlige liv! \n PS Hint: De har små baller" 
+            inputText.textContent = "Det var feil, siden det er et bonus spørsmål får du uendlige liv! \n PS Hint: De har små baller"
         }
     }
 })
