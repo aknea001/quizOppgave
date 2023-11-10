@@ -19,6 +19,7 @@ const opg7 = document.getElementById("question7")
 const opg8 = document.getElementById("question8")
 const opg9 = document.getElementById("question9")
 const opg10 = document.getElementById("question10")
+const opg11 = document.getElementById("question11")
 
 const hintDisplay = document.getElementById("hint")
 
@@ -107,7 +108,12 @@ opg9Knapp.addEventListener("click", function () {
 })
 
 opg10Knapp.addEventListener("click", function () {
-    window.location = ("input.html")
+    opg10.style.display = "none"
+    opg11.style.display = "block"
+    hintDisplay.style.display = "none"
+    opgnr += 1
+    localStorage.setItem("opg", opgnr)
+    document.documentElement.scrollTop = 0
 })
 
 /*let opg = 1

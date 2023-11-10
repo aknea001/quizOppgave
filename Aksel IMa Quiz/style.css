@@ -8,6 +8,13 @@
    }
 }
 
+@keyframes shake {
+   0% { transform: translateX(0) }
+   25% { transform: translateX(5px) }
+   50% { transform: translateX(-5px) }
+   75% { transform: translateX(5px) }
+   100% { transform: translateX(0) }
+}
 body    {
    background-color: #F29A2E;
 }
@@ -138,19 +145,25 @@ button   {
    opacity: 1;
 }
 
-#question2, #question3, #question4, #question5, #question6, #question7, #question8, #question9, #question10  {
+#question2, #question3, #question4, #question5, #question6, #question7, #question8, #question9, #question10, #question11  {
    display: none;
 }
 
 #inputField {
-   width: 300px;
+   width: 500px;
    margin-top: 1rem;
    padding: 10px;
    border-radius: 5px;
    border: none;
-   border-bottom: 5px solid red;
+   border-bottom: 5px solid #023E73;
    box-sizing: border-box;
    background-color: #F29A2E;
+   font-size: 1.5rem;
+}
+
+::placeholder  {
+   color: black;
+   opacity: 1;
 }
 
 .heartDisplay {
@@ -193,4 +206,8 @@ button   {
 .wrong {
    background-color: #D9043D;
    animation: moveOffScreen 2s forwards;
+}
+
+.feilButton {
+   animation: shake 2s;
 }
