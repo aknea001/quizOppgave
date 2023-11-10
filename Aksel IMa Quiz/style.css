@@ -55,7 +55,7 @@ body    {
 .horisontalrekke  {
    display: flex;
    align-items: center;
-   justify-content: space-evenly;
+   justify-content: space-around;
    flex-direction: row;
    margin-top: 1rem;
 }
@@ -94,6 +94,7 @@ button   {
    border: 3px solid #023E73;
    border-radius: 1rem;
    box-sizing: border-box;
+   margin: auto;
 }
 
 .bildeknapp:hover {
@@ -179,6 +180,6 @@ button   {
 }
 
 .wrong {
-   background-color: red;
+   background-color: #D9043D;
    animation: moveOffScreen 2s forwards;
 }
