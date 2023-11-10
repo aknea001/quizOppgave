@@ -24,11 +24,20 @@ const opg11 = document.getElementById("question11")
 const hintDisplay = document.getElementById("hint")
 
 let opgnr = parseInt(localStorage.getItem("opg"))
+let hint = localStorage.getItem("hint")
 
 opg1Knapp.addEventListener("click", function () {
     opg1.style.display = "none"
     opg2.style.display = "block"
-    hintDisplay.style.display = "block"
+
+    hint = localStorage.getItem("hint")
+    if (hint >= 1) {
+        hintDisplay.style.display = "block"
+    }
+    else {
+        hintDisplay.style.display = "none"
+    }
+
     opgnr += 1
     localStorage.setItem("opg", opgnr)
     console.log(opgnr)
@@ -38,7 +47,15 @@ opg1Knapp.addEventListener("click", function () {
 opg2Knapp.addEventListener("click", function () {
     opg2.style.display = "none"
     opg3.style.display = "block"
-    hintDisplay.style.display = "block"
+
+    hint = localStorage.getItem("hint")
+    if (hint >= 1) {
+        hintDisplay.style.display = "block"
+    }
+    else {
+        hintDisplay.style.display = "none"
+    }
+    
     opgnr += 1
     localStorage.setItem("opg", opgnr)
     document.documentElement.scrollTop = 0
@@ -47,7 +64,15 @@ opg2Knapp.addEventListener("click", function () {
 opg3Knapp.addEventListener("click", function () {
     opg3.style.display = "none"
     opg4.style.display = "block"
-    hintDisplay.style.display = "block"
+
+    hint = localStorage.getItem("hint")
+    if (hint >= 1) {
+        hintDisplay.style.display = "block"
+    }
+    else {
+        hintDisplay.style.display = "none"
+    }
+
     opgnr += 1
     localStorage.setItem("opg", opgnr)
     document.documentElement.scrollTop = 0
@@ -56,7 +81,15 @@ opg3Knapp.addEventListener("click", function () {
 opg4Knapp.addEventListener("click", function () {
     opg4.style.display = "none"
     opg5.style.display = "block"
-    hintDisplay.style.display = "block"
+
+    hint = localStorage.getItem("hint")
+    if (hint >= 1) {
+        hintDisplay.style.display = "block"
+    }
+    else {
+        hintDisplay.style.display = "none"
+    }
+    
     opgnr += 1
     localStorage.setItem("opg", opgnr)
     document.documentElement.scrollTop = 0
@@ -65,7 +98,15 @@ opg4Knapp.addEventListener("click", function () {
 opg5Knapp.addEventListener("click", function () {
     opg5.style.display = "none"
     opg6.style.display = "block"
-    hintDisplay.style.display = "block"
+
+    hint = localStorage.getItem("hint")
+    if (hint >= 1) {
+        hintDisplay.style.display = "block"
+    }
+    else {
+        hintDisplay.style.display = "none"
+    }
+    
     opgnr += 1
     localStorage.setItem("opg", opgnr)
     document.documentElement.scrollTop = 0
@@ -74,7 +115,15 @@ opg5Knapp.addEventListener("click", function () {
 opg6Knapp.addEventListener("click", function () {
     opg6.style.display = "none"
     opg7.style.display = "block"
-    hintDisplay.style.display = "block"
+
+    hint = localStorage.getItem("hint")
+    if (hint >= 1) {
+        hintDisplay.style.display = "block"
+    }
+    else {
+        hintDisplay.style.display = "none"
+    }
+    
     opgnr += 1
     localStorage.setItem("opg", opgnr)
     document.documentElement.scrollTop = 0
@@ -83,7 +132,15 @@ opg6Knapp.addEventListener("click", function () {
 opg7Knapp.addEventListener("click", function () {
     opg7.style.display = "none"
     opg8.style.display = "block"
-    hintDisplay.style.display = "block"
+
+    hint = localStorage.getItem("hint")
+    if (hint >= 1) {
+        hintDisplay.style.display = "block"
+    }
+    else {
+        hintDisplay.style.display = "none"
+    }
+    
     opgnr += 1
     localStorage.setItem("opg", opgnr)
     document.documentElement.scrollTop = 0
@@ -92,7 +149,15 @@ opg7Knapp.addEventListener("click", function () {
 opg8Knapp.addEventListener("click", function () {
     opg8.style.display = "none"
     opg9.style.display = "block"
-    hintDisplay.style.display = "block"
+
+    hint = localStorage.getItem("hint")
+    if (hint >= 1) {
+        hintDisplay.style.display = "block"
+    }
+    else {
+        hintDisplay.style.display = "none"
+    }
+    
     opgnr += 1
     localStorage.setItem("opg", opgnr)
     document.documentElement.scrollTop = 0
@@ -101,7 +166,15 @@ opg8Knapp.addEventListener("click", function () {
 opg9Knapp.addEventListener("click", function () {
     opg9.style.display = "none"
     opg10.style.display = "block"
-    hintDisplay.style.display = "block"
+
+    hint = localStorage.getItem("hint")
+    if (hint >= 1) {
+        hintDisplay.style.display = "block"
+    }
+    else {
+        hintDisplay.style.display = "none"
+    }
+    
     opgnr += 1
     localStorage.setItem("opg", opgnr)
     document.documentElement.scrollTop = 0
@@ -110,7 +183,15 @@ opg9Knapp.addEventListener("click", function () {
 opg10Knapp.addEventListener("click", function () {
     opg10.style.display = "none"
     opg11.style.display = "block"
-    hintDisplay.style.display = "none"
+
+    hint = localStorage.getItem("hint")
+    if (hint >= 1) {
+        hintDisplay.style.display = "block"
+    }
+    else {
+        hintDisplay.style.display = "none"
+    }
+    
     opgnr += 1
     localStorage.setItem("opg", opgnr)
     document.documentElement.scrollTop = 0

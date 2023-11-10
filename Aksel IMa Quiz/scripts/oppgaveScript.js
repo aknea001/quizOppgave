@@ -1,17 +1,23 @@
 const feil = document.querySelectorAll(".feilKnapp")
 const heartDisplays = document.querySelectorAll(".hearts")
-const hint = document.getElementById("hint")
+const hintElement = document.getElementById("hint")
+const hintLeft = document.getElementById("hintnr")
 const input = document.getElementById("inputField")
 const inputText = document.getElementById("textDisplay")
+
 let hearts = localStorage.getItem("hearts")
 let num = Math.floor(Math.random() * (2 - 0)) + 0
 
 let opg = parseInt(localStorage.getItem("opg"))
 
+let hint = localStorage.getItem("hint")
+
 let max = opg * 2
 let min = max - 2
 
 let inputValue = input.value
+
+hintLeft.textContent = hint
 
 heartDisplays.forEach(function (heartDisplay) {
     heartDisplay.src = "bilder/hearts/" + hearts + "hearts.png"
@@ -34,8 +40,11 @@ feil.forEach(function (feilButton) {
     })
 })
 
-hint.addEventListener("click", function () {
-    hint.style.display = "none"
+hintElement.addEventListener("click", function () {
+    hintElement.style.display = "none"
+
+    hint -= 1
+    hintLeft.textContent = hint
 
     opg = parseInt(localStorage.getItem("opg"))
     max = opg * 2
@@ -47,6 +56,8 @@ hint.addEventListener("click", function () {
         button.classList.remove("wrong")
     })
     feil[num].classList.add("wrong")
+
+    localStorage.setItem("hint", hint)
 })
 
 input.addEventListener("keypress", function(event) {
