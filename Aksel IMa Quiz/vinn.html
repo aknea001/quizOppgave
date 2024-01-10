@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="script.js"></script>
+    <script type="module" src="scripts/vinnScript.js"></script>
     <title>Gratulerer!</title>
 </head>
 <body>
@@ -14,19 +14,12 @@
         </h1>
     </div>
     <div>
-        <p class="spørsmål">
-            Gratulerer du svarte riktig på alt!
-        </p>
+        <p id="vinnMessage" class="spørsmål"></p>
     </div>
-    <div class="bildemedtekst">
-        <div class="bildetekst">
-            Frankrike som feirer etter VM vinn i 2018
-        </div>
-        <img class="bilde" src="bilder/vinn.jpeg" alt="">
-    </div>
+    <img id="bileDisplay" class="bilde bildeutentekst" src="" alt="">
     <div class="vertikalrekke">
-        <a class="knapp" href="oppgave1.html">Ta quizen igjen</a>
-        <a class="knapp" href="index.html">Tilbake til startskjerm</a>
+        <button id="taIgjen" class="knapp">Ta quizen igjen</button>
+        <button id="tilStartskjerm" class="knapp">Tilbake til startskjerm</button>
     </div>
 </body>
 </html>

@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
+@keyframes moveOffScreen {
+   to {
+      transform: translateX(-50%);
+      opacity: 0%;
+      display: none;
+   }
+}
+
+@keyframes shake {
+   0% { transform: translateX(0) }
+   25% { transform: translateX(5px) }
+   50% { transform: translateX(-5px) }
+   75% { transform: translateX(5px) }
+   100% { transform: translateX(0) }
+}
 body    {
    background-color: #F29A2E;
 }
@@ -11,7 +26,7 @@ body    {
    text-align: center;
    align-items: center;
    margin: auto;
-   background-color: #F28B30;
+   background-image: url("bilder/banner.jpg");
    margin-top: 1rem;
    font-family: 'PT Sans', sans-serif;
    font-size: 1rem;
@@ -47,7 +62,7 @@ body    {
 .horisontalrekke  {
    display: flex;
    align-items: center;
-   justify-content: space-evenly;
+   justify-content: space-around;
    flex-direction: row;
    margin-top: 1rem;
 }
@@ -86,6 +101,7 @@ button   {
    border: 3px solid #023E73;
    border-radius: 1rem;
    box-sizing: border-box;
+   margin: auto;
 }
 
 .bildeknapp:hover {
@@ -127,4 +143,71 @@ button   {
 
 .bildeutentekst:hover {
    opacity: 1;
+}
+
+#question2, #question3, #question4, #question5, #question6, #question7, #question8, #question9, #question10, #question11  {
+   display: none;
+}
+
+#inputField {
+   width: 500px;
+   margin-top: 1rem;
+   padding: 10px;
+   border-radius: 5px;
+   border: none;
+   border-bottom: 5px solid #023E73;
+   box-sizing: border-box;
+   background-color: #F29A2E;
+   font-size: 1.5rem;
+}
+
+::placeholder  {
+   color: black;
+   opacity: 1;
+}
+
+.heartDisplay {
+   display: flex;
+   width: 250px;
+   height: 50px;
+   justify-content: center;
+   margin: auto;
+}
+
+#hint {
+   width: 350px;
+   padding: 20px;
+   border: 1px solid #023E73;
+   text-align: center;
+   margin: auto;
+   text-decoration: none;
+   font-family: 'PT Sans', sans-serif;
+   font-size: 1.5rem;
+   margin-top: 1rem;
+   background-color: #023E73;
+   color: white;
+   border-radius: 1rem;
+}
+
+#hint:hover {
+   transition: 500ms;
+   font-weight: 900;
+   background-color: white;
+   color: #023E73;
+   cursor: pointer;
+}
+
+.hintDiv {
+   width: fit-content;
+   margin-right: auto;
+   position: absolute;
+}
+
+.wrong {
+   background-color: #D9043D;
+   animation: moveOffScreen 2s forwards;
+}
+
+.feilButton {
+   animation: shake 2s;
 }
